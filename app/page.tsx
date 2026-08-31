@@ -6,11 +6,15 @@ import Image from 'next/image';
 export default function HomePage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     // Ensure playback begins on load
     const video = videoRef.current;
     if (video) {
+      if (video.readyState >= 3) {
+        setIsVideoLoaded(true);
+      }
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
@@ -64,6 +68,23 @@ export default function HomePage() {
       <section className="video-fullwidth-section">
         <div className="glowing-beam-line" />
         <div className="video-container">
+          {/* Skeleton Loader while video is buffering/loading */}
+          {!isVideoLoaded && (
+            <div className="video-skeleton">
+              <div className="video-skeleton-shimmer" />
+              <div className="skeleton-content">
+                <div className="skeleton-spinner">
+                  <div className="spinner-ring" />
+                  <div className="spinner-center-dot" />
+                </div>
+                <div className="skeleton-text">
+                  <span className="pulse-dot" />
+                  <span>Loading Visuals...</span>
+                </div>
+              </div>
+            </div>
+          )}
+
           <video
             ref={videoRef}
             autoPlay
@@ -71,6 +92,11 @@ export default function HomePage() {
             playsInline
             muted
             preload="auto"
+            onLoadedData={() => setIsVideoLoaded(true)}
+            onCanPlay={() => setIsVideoLoaded(true)}
+            style={{
+              opacity: isVideoLoaded ? 1 : 0,
+            }}
           >
             <source src="/files/Cover1.mp4" type="video/mp4" />
             <source src="/files/Cover.mp4" type="video/mp4" />
@@ -84,6 +110,8 @@ export default function HomePage() {
             className="sound-overlay-btn"
             title="Toggle Audio"
             style={{
+              opacity: isVideoLoaded ? 1 : 0,
+              pointerEvents: isVideoLoaded ? 'auto' : 'none',
               background: isMuted ? 'rgba(14, 24, 28, 0.78)' : 'rgba(42, 123, 140, 0.88)',
               borderColor: isMuted ? 'rgba(42, 123, 140, 0.5)' : '#5ed2ea',
             }}
