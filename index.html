@@ -1,691 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aesthetic Venture — Commit to Serve</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetic Venture</title>
+
     <!-- Primary Meta Tags (Google Search SEO) -->
-    <meta name="title" content="Aesthetic Venture — Commit to Serve">
-    <meta name="description" content="Aesthetic Venture — Commit to Serve. Crafting exceptional spaces and timeless architectural experiences. Plot-33, Kallayanpur Main Road, Mirpur, Dhaka -1207.">
-    <meta name="keywords" content="Aesthetic Venture, Commit to Serve, Architecture, Interior Design, Dhaka, Bangladesh">
-    <meta name="author" content="Aesthetic Venture">
-    <meta name="robots" content="index, follow">
+    <meta name="title" content="Aesthetic Venture" />
+    <meta
+      name="description"
+      content="Aesthetic Venture Plot-33, Kallayanpur Main Road, Mirpur, Dhaka -1207."
+    />
+    <meta
+      name="keywords"
+      content="Aesthetic Venture, Commit to Serve, Architecture, Interior Design, Dhaka, Bangladesh"
+    />
+    <meta name="author" content="Aesthetic Venture" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Facebook / WhatsApp / Messenger / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Aesthetic Venture">
-    <meta property="og:title" content="Aesthetic Venture — Commit to Serve">
-    <meta property="og:description" content="Commit to Serve. Crafting exceptional spaces and timeless architectural experiences.">
-    <meta property="og:image" content="files/logo.jpeg">
-    <meta property="og:image:secure_url" content="files/logo.jpeg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:alt" content="Aesthetic Venture — Commit to Serve">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aesthetic Venture" />
+    <meta property="og:title" content="Aesthetic Venture" />
+    <meta property="og:description" content="Commit to Serve" />
+    <meta property="og:image" content="files/logo.jpeg" />
+    <meta property="og:image:secure_url" content="files/logo.jpeg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Aesthetic Venture" />
 
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Aesthetic Venture — Commit to Serve">
-    <meta name="twitter:description" content="Commit to Serve. Crafting exceptional spaces and timeless architectural experiences.">
-    <meta name="twitter:image" content="files/logo.jpeg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aesthetic Venture" />
+    <meta name="twitter:description" content="Commit to Serve" />
+    <meta name="twitter:image" content="files/logo.jpeg" />
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="files/logo2.jpeg">
-    <link rel="apple-touch-icon" href="files/logo2.jpeg">
+    <link rel="icon" type="image/jpeg" href="files/logo2.jpeg" />
+    <link rel="apple-touch-icon" href="files/logo2.jpeg" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        :root {
-            --primary: #2a7b8c;
-            --primary-rgb: 42, 123, 140;
-            --primary-light: #3ca0b6;
-            --primary-glow-cyan: #5ed2ea;
-            --primary-dark: #1c5561;
-            --bg-dark: #070d10;
-            --bg-surface: #0e181c;
-            --text-main: #f0f6f8;
-            --text-muted: #8ea5ad;
-            --glass-bg: rgba(14, 24, 28, 0.65);
-            --glass-border: rgba(42, 123, 140, 0.3);
-            --glass-glow: rgba(42, 123, 140, 0.2);
-            --glass-card: rgba(255, 255, 255, 0.04);
-        }
+      :root {
+        --primary: #2a7b8c;
+        --primary-rgb: 42, 123, 140;
+        --primary-light: #3ca0b6;
+        --primary-glow-cyan: #5ed2ea;
+        --primary-dark: #1c5561;
+        --bg-dark: #070d10;
+        --bg-surface: #0e181c;
+        --text-main: #f0f6f8;
+        --text-muted: #8ea5ad;
+        --glass-bg: rgba(14, 24, 28, 0.65);
+        --glass-border: rgba(42, 123, 140, 0.3);
+        --glass-glow: rgba(42, 123, 140, 0.2);
+        --glass-card: rgba(255, 255, 255, 0.04);
+      }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-            position: relative;
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(42, 123, 140, 0.3) 0%, transparent 60%),
-                radial-gradient(circle at 10% 40%, rgba(42, 123, 140, 0.12) 0%, transparent 40%),
-                radial-gradient(circle at 90% 70%, rgba(42, 123, 140, 0.15) 0%, transparent 50%);
-            background-attachment: fixed;
-        }
+      body {
+        font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--text-main);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        position: relative;
+        background-image: radial-gradient(
+            circle at 50% 0%,
+            rgba(42, 123, 140, 0.3) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at 10% 40%,
+            rgba(42, 123, 140, 0.12) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 90% 70%,
+            rgba(42, 123, 140, 0.15) 0%,
+            transparent 50%
+          );
+        background-attachment: fixed;
+      }
 
-        /* Ambient Glowing Background Elements */
-        .ambient-glow {
-            position: fixed;
-            border-radius: 50%;
-            filter: blur(120px);
-            z-index: 0;
-            pointer-events: none;
-            opacity: 0.6;
-        }
+      /* Ambient Glowing Background Elements */
+      .ambient-glow {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(120px);
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.6;
+      }
 
-        .glow-1 {
-            top: 5%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 600px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(42, 123, 140, 0.4), transparent 70%);
-        }
+      .glow-1 {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 300px;
+        background: radial-gradient(
+          circle,
+          rgba(42, 123, 140, 0.4),
+          transparent 70%
+        );
+      }
 
-        .glow-2 {
-            bottom: 10%;
-            left: 10%;
-            width: 450px;
-            height: 450px;
-            background: radial-gradient(circle, rgba(42, 123, 140, 0.2), transparent 70%);
-        }
+      .glow-2 {
+        bottom: 10%;
+        left: 10%;
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(
+          circle,
+          rgba(42, 123, 140, 0.2),
+          transparent 70%
+        );
+      }
 
-        .glow-3 {
-            top: 50%;
-            right: 10%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(60, 160, 182, 0.18), transparent 70%);
-        }
+      .glow-3 {
+        top: 50%;
+        right: 10%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(60, 160, 182, 0.18),
+          transparent 70%
+        );
+      }
 
-        /* Gorgeous Left-to-Right Sweeping Ambient Glow Ray */
-        .light-sweep-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            pointer-events: none;
-            z-index: 0;
-        }
+      /* Gorgeous Left-to-Right Sweeping Ambient Glow Ray */
+      .light-sweep-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 0;
+      }
 
-        .light-sweep-beam {
-            position: absolute;
-            top: -40%;
-            left: -80%;
-            width: 70vw;
-            height: 180vh;
-            background: linear-gradient(
-                115deg,
-                transparent 0%,
-                rgba(42, 123, 140, 0.0) 25%,
-                rgba(94, 210, 234, 0.08) 42%,
-                rgba(165, 236, 250, 0.2) 50%,
-                rgba(42, 123, 140, 0.1) 58%,
-                transparent 75%
-            );
-            filter: blur(60px);
-            animation: sweepGlowRay 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-        }
+      .light-sweep-beam {
+        position: absolute;
+        top: -40%;
+        left: -80%;
+        width: 70vw;
+        height: 180vh;
+        background: linear-gradient(
+          115deg,
+          transparent 0%,
+          rgba(42, 123, 140, 0) 25%,
+          rgba(94, 210, 234, 0.08) 42%,
+          rgba(165, 236, 250, 0.2) 50%,
+          rgba(42, 123, 140, 0.1) 58%,
+          transparent 75%
+        );
+        filter: blur(60px);
+        animation: sweepGlowRay 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
 
-        @keyframes sweepGlowRay {
-            0% {
-                transform: translateX(-60vw) rotate(15deg);
-                opacity: 0;
-            }
-            15% {
-                opacity: 0.9;
-            }
-            85% {
-                opacity: 0.9;
-            }
-            100% {
-                transform: translateX(180vw) rotate(15deg);
-                opacity: 0;
-            }
+      @keyframes sweepGlowRay {
+        0% {
+          transform: translateX(-60vw) rotate(15deg);
+          opacity: 0;
         }
+        15% {
+          opacity: 0.9;
+        }
+        85% {
+          opacity: 0.9;
+        }
+        100% {
+          transform: translateX(180vw) rotate(15deg);
+          opacity: 0;
+        }
+      }
 
-        /* Seamless Navbar matching body background */
+      /* Seamless Navbar matching body background */
+      .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: transparent;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-bottom: none;
+        box-shadow: none;
+      }
+
+      .nav-logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        position: relative;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .nav-logo-wrapper:hover {
+        transform: scale(1.03);
+        opacity: 0.95;
+      }
+
+      .logo-img {
+        height: 46px;
+        width: auto;
+        border-radius: 8px;
+        display: block;
+        object-fit: contain;
+      }
+
+      /* Shimmering Light Line on top of video */
+      .glowing-beam-line {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background: rgba(42, 123, 140, 0.2);
+        overflow: hidden;
+        z-index: 2;
+      }
+
+      .glowing-beam-line::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(94, 210, 234, 0.4),
+          #ffffff,
+          var(--primary-glow-cyan),
+          transparent
+        );
+        box-shadow: 0 0 16px 2px rgba(94, 210, 234, 0.85);
+        animation: lineShimmerSweep 4.5s ease-in-out infinite;
+      }
+
+      @keyframes lineShimmerSweep {
+        0% {
+          left: -50%;
+        }
+        100% {
+          left: 150%;
+        }
+      }
+
+      /* Full Width Video Section Directly After Nav */
+      .video-fullwidth-section {
+        width: 100%;
+        position: relative;
+        background: #000;
+        margin: 0;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8),
+          0 0 40px rgba(42, 123, 140, 0.25);
+        border-bottom: 1px solid var(--glass-border);
+        overflow: hidden;
+        z-index: 1;
+        animation: fadeIn 0.8s ease-out;
+      }
+
+      .video-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+        max-height: 85vh;
+        display: block;
+        object-fit: cover;
+        outline: none;
+        border: none;
+        pointer-events: none;
+      }
+
+      video::-webkit-media-controls,
+      video::-webkit-media-controls-enclosure,
+      video::-webkit-media-controls-panel,
+      video::-webkit-media-controls-play-button,
+      video::-webkit-media-controls-timeline,
+      video::-webkit-media-controls-current-time-display,
+      video::-webkit-media-controls-time-remaining-display,
+      video::-webkit-media-controls-mute-button,
+      video::-webkit-media-controls-toggle-closed-captions-button,
+      video::-webkit-media-controls-volume-slider {
+        display: none !important;
+        -webkit-appearance: none;
+        opacity: 0;
+      }
+
+      /* Floating Audio Control Button with Shimmer */
+      .sound-overlay-btn {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: rgba(14, 24, 28, 0.78);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(42, 123, 140, 0.5);
+        color: #ffffff;
+        font-size: 0.88rem;
+        font-weight: 600;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5),
+          0 0 20px rgba(42, 123, 140, 0.4);
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+
+      .sound-overlay-btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transform: skewX(-20deg);
+        animation: buttonGlowSweep 3.5s infinite;
+      }
+
+      @keyframes buttonGlowSweep {
+        0% {
+          left: -100%;
+        }
+        40%,
+        100% {
+          left: 200%;
+        }
+      }
+
+      .sound-overlay-btn:hover {
+        background: rgba(42, 123, 140, 0.88);
+        border-color: #5ed2ea;
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(42, 123, 140, 0.6);
+      }
+
+      .sound-overlay-btn svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      /* Main Content Container (Texts & Info Cards below Video) */
+      .content-container {
+        width: 100%;
+        max-width: 980px;
+        padding: 45px 20px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        z-index: 1;
+      }
+
+      /* Header Texts Section */
+      .header-section {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      /* Glowing Coming Soon Badge */
+      .coming-soon-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px;
+        border-radius: 999px;
+        background: rgba(42, 123, 140, 0.16);
+        border: 1px solid rgba(42, 123, 140, 0.55);
+        backdrop-filter: blur(12px);
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: #5ed2ea;
+        box-shadow: 0 0 25px rgba(42, 123, 140, 0.35);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .coming-soon-badge::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.35),
+          transparent
+        );
+        transform: skewX(-20deg);
+        animation: badgeGlowSweep 4s ease-in-out infinite;
+      }
+
+      @keyframes badgeGlowSweep {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 200%;
+        }
+      }
+
+      .pulse-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #49d5f2;
+        position: relative;
+        box-shadow: 0 0 10px #49d5f2;
+      }
+
+      .pulse-dot::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border-radius: 50%;
+        background-color: rgba(73, 213, 242, 0.6);
+        animation: ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+
+      @keyframes ping {
+        75%,
+        100% {
+          transform: scale(2.2);
+          opacity: 0;
+        }
+      }
+
+      /* Gorgeous Left-to-Right Shining Heading */
+      .hero-title {
+        font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+        font-weight: 800;
+        font-family: "Space Grotesk", sans-serif;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        background: linear-gradient(
+          115deg,
+          #ffffff 0%,
+          #d3f2f8 20%,
+          #ffffff 40%,
+          #5ed2ea 55%,
+          #ffffff 70%,
+          #9fe2ee 85%,
+          #ffffff 100%
+        );
+        background-size: 250% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textShineSweep 6s linear infinite;
+        filter: drop-shadow(0 4px 20px rgba(42, 123, 140, 0.3));
+      }
+
+      @keyframes textShineSweep {
+        0% {
+          background-position: 0% center;
+        }
+        100% {
+          background-position: 250% center;
+        }
+      }
+
+      .hero-tagline {
+        font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #5ed2ea;
+        background: linear-gradient(
+          90deg,
+          #5ed2ea 0%,
+          #ffffff 50%,
+          #5ed2ea 100%
+        );
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textShineSweep 5s linear infinite;
+        display: inline-block;
+        margin-top: -4px;
+        margin-bottom: 2px;
+        text-shadow: 0 0 20px rgba(94, 210, 234, 0.35);
+      }
+
+      .hero-subtitle {
+        font-size: 1.08rem;
+        color: var(--text-muted);
+        max-width: 620px;
+        line-height: 1.65;
+      }
+
+      /* Glass Info Card Section with Left-to-Right Border Glow */
+      .info-card-container {
+        width: 100%;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .glass-card {
+        background: linear-gradient(
+          135deg,
+          rgba(14, 24, 28, 0.72) 0%,
+          rgba(20, 36, 42, 0.52) 100%
+        );
+        border: 1px solid rgba(42, 123, 140, 0.4);
+        border-radius: 24px;
+        padding: 34px 40px;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55),
+          inset 0 1px 0 rgba(255, 255, 255, 0.15),
+          0 0 35px rgba(42, 123, 140, 0.2);
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 28px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Left-to-Right Glowing Beam on Card Top Edge */
+      .glass-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(94, 210, 234, 0.8),
+          #ffffff,
+          rgba(94, 210, 234, 0.8),
+          transparent
+        );
+        box-shadow: 0 0 15px rgba(94, 210, 234, 0.9);
+        animation: cardTopGlowSweep 5s ease-in-out infinite;
+      }
+
+      @keyframes cardTopGlowSweep {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 100%;
+        }
+      }
+
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 18px 22px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: all 0.3s ease;
+      }
+
+      .info-item:hover {
+        background: rgba(42, 123, 140, 0.12);
+        border-color: rgba(42, 123, 140, 0.45);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(42, 123, 140, 0.2);
+      }
+
+      .icon-box {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        border-radius: 14px;
+        background: linear-gradient(
+          135deg,
+          rgba(42, 123, 140, 0.35) 0%,
+          rgba(42, 123, 140, 0.1) 100%
+        );
+        border: 1px solid rgba(42, 123, 140, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #5ed2ea;
+        box-shadow: 0 4px 15px rgba(42, 123, 140, 0.3);
+      }
+
+      .icon-box svg {
+        width: 24px;
+        height: 24px;
+        stroke-width: 2;
+      }
+
+      .info-content {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .info-label {
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #6fbdd0;
+      }
+
+      .info-value {
+        font-size: 1.05rem;
+        color: #e4edf0;
+        line-height: 1.55;
+        font-weight: 500;
+      }
+
+      .info-value a {
+        color: #f0f6f8;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.2s ease;
+        word-break: break-all;
+      }
+
+      .info-value a:hover {
+        color: #5ed2ea;
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      .footer {
+        margin-top: auto;
+        width: 100%;
+        text-align: center;
+        padding: 28px 20px;
+        color: #5c747c;
+        font-size: 0.85rem;
+        border-top: 1px solid rgba(42, 123, 140, 0.15);
+        z-index: 1;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Breakpoints */
+      @media (max-width: 768px) {
         .navbar {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: transparent;
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-bottom: none;
-            box-shadow: none;
-        }
-
-        .nav-logo-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            padding: 0;
-            position: relative;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .nav-logo-wrapper:hover {
-            transform: scale(1.03);
-            opacity: 0.95;
+          padding: 8px 14px;
         }
 
         .logo-img {
-            height: 46px;
-            width: auto;
-            border-radius: 8px;
-            display: block;
-            object-fit: contain;
+          height: 38px;
         }
 
-        /* Shimmering Light Line on top of video */
-        .glowing-beam-line {
-            position: relative;
-            width: 100%;
-            height: 2px;
-            background: rgba(42, 123, 140, 0.2);
-            overflow: hidden;
-            z-index: 2;
-        }
-
-        .glowing-beam-line::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -50%;
-            width: 40%;
-            height: 100%;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(94, 210, 234, 0.4),
-                #ffffff,
-                var(--primary-glow-cyan),
-                transparent
-            );
-            box-shadow: 0 0 16px 2px rgba(94, 210, 234, 0.85);
-            animation: lineShimmerSweep 4.5s ease-in-out infinite;
-        }
-
-        @keyframes lineShimmerSweep {
-            0% { left: -50%; }
-            100% { left: 150%; }
-        }
-
-        /* Full Width Video Section Directly After Nav */
-        .video-fullwidth-section {
-            width: 100%;
-            position: relative;
-            background: #000;
-            margin: 0;
-            box-shadow: 
-                0 25px 60px rgba(0, 0, 0, 0.8),
-                0 0 40px rgba(42, 123, 140, 0.25);
-            border-bottom: 1px solid var(--glass-border);
-            overflow: hidden;
-            z-index: 1;
-            animation: fadeIn 0.8s ease-out;
-        }
-
-        .video-container {
-            width: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #000;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            max-height: 85vh;
-            display: block;
-            object-fit: cover;
-            outline: none;
-            border: none;
-            pointer-events: none;
-        }
-
-        video::-webkit-media-controls,
-        video::-webkit-media-controls-enclosure,
-        video::-webkit-media-controls-panel,
-        video::-webkit-media-controls-play-button,
-        video::-webkit-media-controls-timeline,
-        video::-webkit-media-controls-current-time-display,
-        video::-webkit-media-controls-time-remaining-display,
-        video::-webkit-media-controls-mute-button,
-        video::-webkit-media-controls-toggle-closed-captions-button,
-        video::-webkit-media-controls-volume-slider {
-            display: none !important;
-            -webkit-appearance: none;
-            opacity: 0;
-        }
-
-        /* Floating Audio Control Button with Shimmer */
-        .sound-overlay-btn {
-            position: absolute;
-            bottom: 24px;
-            right: 24px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 18px;
-            border-radius: 999px;
-            background: rgba(14, 24, 28, 0.78);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(42, 123, 140, 0.5);
-            color: #ffffff;
-            font-size: 0.88rem;
-            font-weight: 600;
-            cursor: pointer;
-            z-index: 10;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(42, 123, 140, 0.4);
-            transition: all 0.3s ease;
-            overflow: hidden;
-        }
-
-        .sound-overlay-btn::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 60%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transform: skewX(-20deg);
-            animation: buttonGlowSweep 3.5s infinite;
-        }
-
-        @keyframes buttonGlowSweep {
-            0% { left: -100%; }
-            40%, 100% { left: 200%; }
-        }
-
-        .sound-overlay-btn:hover {
-            background: rgba(42, 123, 140, 0.88);
-            border-color: #5ed2ea;
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(42, 123, 140, 0.6);
-        }
-
-        .sound-overlay-btn svg {
-            width: 18px;
-            height: 18px;
-        }
-
-        /* Main Content Container (Texts & Info Cards below Video) */
         .content-container {
-            width: 100%;
-            max-width: 980px;
-            padding: 45px 20px 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 36px;
-            z-index: 1;
+          padding: 30px 16px 40px;
+          gap: 26px;
         }
 
-        /* Header Texts Section */
         .header-section {
-            width: 100%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 16px;
-            animation: fadeInUp 0.8s ease-out;
+          gap: 12px;
         }
 
-        /* Glowing Coming Soon Badge */
-        .coming-soon-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 8px 24px;
-            border-radius: 999px;
-            background: rgba(42, 123, 140, 0.16);
-            border: 1px solid rgba(42, 123, 140, 0.55);
-            backdrop-filter: blur(12px);
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            color: #5ed2ea;
-            box-shadow: 0 0 25px rgba(42, 123, 140, 0.35);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .coming-soon-badge::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
-            transform: skewX(-20deg);
-            animation: badgeGlowSweep 4s ease-in-out infinite;
-        }
-
-        @keyframes badgeGlowSweep {
-            0% { left: -100%; }
-            50%, 100% { left: 200%; }
-        }
-
-        .pulse-dot {
-            width: 9px;
-            height: 9px;
-            border-radius: 50%;
-            background-color: #49d5f2;
-            position: relative;
-            box-shadow: 0 0 10px #49d5f2;
-        }
-
-        .pulse-dot::after {
-            content: '';
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            border-radius: 50%;
-            background-color: rgba(73, 213, 242, 0.6);
-            animation: ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
-        }
-
-        @keyframes ping {
-            75%, 100% {
-                transform: scale(2.2);
-                opacity: 0;
-            }
-        }
-
-        /* Gorgeous Left-to-Right Shining Heading */
-        .hero-title {
-            font-size: clamp(2.3rem, 4.8vw, 3.6rem);
-            font-weight: 800;
-            font-family: 'Space Grotesk', sans-serif;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-            background: linear-gradient(
-                115deg,
-                #ffffff 0%,
-                #d3f2f8 20%,
-                #ffffff 40%,
-                #5ed2ea 55%,
-                #ffffff 70%,
-                #9fe2ee 85%,
-                #ffffff 100%
-            );
-            background-size: 250% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textShineSweep 6s linear infinite;
-            filter: drop-shadow(0 4px 20px rgba(42, 123, 140, 0.3));
-        }
-
-        @keyframes textShineSweep {
-            0% {
-                background-position: 0% center;
-            }
-            100% {
-                background-position: 250% center;
-            }
-        }
-
-        .hero-tagline {
-            font-size: clamp(1.05rem, 2.2vw, 1.45rem);
-            font-weight: 700;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: #5ed2ea;
-            background: linear-gradient(90deg, #5ed2ea 0%, #ffffff 50%, #5ed2ea 100%);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textShineSweep 5s linear infinite;
-            display: inline-block;
-            margin-top: -4px;
-            margin-bottom: 2px;
-            text-shadow: 0 0 20px rgba(94, 210, 234, 0.35);
-        }
-
-        .hero-subtitle {
-            font-size: 1.08rem;
-            color: var(--text-muted);
-            max-width: 620px;
-            line-height: 1.65;
-        }
-
-        /* Glass Info Card Section with Left-to-Right Border Glow */
-        .info-card-container {
-            width: 100%;
-            animation: fadeInUp 1s ease-out;
+        .sound-overlay-btn {
+          bottom: 15px;
+          right: 15px;
+          padding: 8px 14px;
+          font-size: 0.8rem;
         }
 
         .glass-card {
-            background: linear-gradient(135deg, rgba(14, 24, 28, 0.72) 0%, rgba(20, 36, 42, 0.52) 100%);
-            border: 1px solid rgba(42, 123, 140, 0.4);
-            border-radius: 24px;
-            padding: 34px 40px;
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            box-shadow: 
-                0 30px 60px rgba(0, 0, 0, 0.55),
-                inset 0 1px 0 rgba(255, 255, 255, 0.15),
-                0 0 35px rgba(42, 123, 140, 0.2);
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 28px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Left-to-Right Glowing Beam on Card Top Edge */
-        .glass-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(94, 210, 234, 0.8),
-                #ffffff,
-                rgba(94, 210, 234, 0.8),
-                transparent
-            );
-            box-shadow: 0 0 15px rgba(94, 210, 234, 0.9);
-            animation: cardTopGlowSweep 5s ease-in-out infinite;
-        }
-
-        @keyframes cardTopGlowSweep {
-            0% { left: -100%; }
-            50%, 100% { left: 100%; }
+          grid-template-columns: 1fr;
+          padding: 22px 18px;
+          gap: 18px;
         }
 
         .info-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 18px 22px;
-            border-radius: 18px;
-            background: rgba(255, 255, 255, 0.025);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            transition: all 0.3s ease;
-        }
-
-        .info-item:hover {
-            background: rgba(42, 123, 140, 0.12);
-            border-color: rgba(42, 123, 140, 0.45);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(42, 123, 140, 0.2);
+          padding: 14px 16px;
         }
 
         .icon-box {
-            width: 50px;
-            height: 50px;
-            min-width: 50px;
-            border-radius: 14px;
-            background: linear-gradient(135deg, rgba(42, 123, 140, 0.35) 0%, rgba(42, 123, 140, 0.1) 100%);
-            border: 1px solid rgba(42, 123, 140, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #5ed2ea;
-            box-shadow: 0 4px 15px rgba(42, 123, 140, 0.3);
+          width: 44px;
+          height: 44px;
+          min-width: 44px;
         }
 
         .icon-box svg {
-            width: 24px;
-            height: 24px;
-            stroke-width: 2;
-        }
-
-        .info-content {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .info-label {
-            font-size: 0.78rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #6fbdd0;
+          width: 20px;
+          height: 20px;
         }
 
         .info-value {
-            font-size: 1.05rem;
-            color: #e4edf0;
-            line-height: 1.55;
-            font-weight: 500;
+          font-size: 0.95rem;
         }
-
-        .info-value a {
-            color: #f0f6f8;
-            text-decoration: none;
-            position: relative;
-            transition: color 0.2s ease;
-            word-break: break-all;
-        }
-
-        .info-value a:hover {
-            color: #5ed2ea;
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        .footer {
-            margin-top: auto;
-            width: 100%;
-            text-align: center;
-            padding: 28px 20px;
-            color: #5c747c;
-            font-size: 0.85rem;
-            border-top: 1px solid rgba(42, 123, 140, 0.15);
-            z-index: 1;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive Breakpoints */
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 8px 14px;
-            }
-            
-            .logo-img {
-                height: 38px;
-            }
-
-            .content-container {
-                padding: 30px 16px 40px;
-                gap: 26px;
-            }
-
-            .header-section {
-                gap: 12px;
-            }
-
-            .sound-overlay-btn {
-                bottom: 15px;
-                right: 15px;
-                padding: 8px 14px;
-                font-size: 0.8rem;
-            }
-
-            .glass-card {
-                grid-template-columns: 1fr;
-                padding: 22px 18px;
-                gap: 18px;
-            }
-
-            .info-item {
-                padding: 14px 16px;
-            }
-
-            .icon-box {
-                width: 44px;
-                height: 44px;
-                min-width: 44px;
-            }
-
-            .icon-box svg {
-                width: 20px;
-                height: 20px;
-            }
-
-            .info-value {
-                font-size: 0.95rem;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Ambient Glowing Backgrounds -->
     <div class="ambient-glow glow-1"></div>
     <div class="ambient-glow glow-2"></div>
@@ -693,149 +771,200 @@
 
     <!-- Gorgeous Left-to-Right Glowing Ambient Light Ray Sweep -->
     <div class="light-sweep-container">
-        <div class="light-sweep-beam"></div>
+      <div class="light-sweep-beam"></div>
     </div>
 
     <!-- Centered Logo Navbar (Seamless body background match) -->
     <header class="navbar">
-        <div class="nav-logo-wrapper">
-            <img src="files/logo.jpeg" alt="Aesthetic Venture Logo" class="logo-img">
-        </div>
+      <div class="nav-logo-wrapper">
+        <img
+          src="files/logo.jpeg"
+          alt="Aesthetic Venture Logo"
+          class="logo-img"
+        />
+      </div>
     </header>
 
     <!-- 1. Full-Width Video Showcase (Right after Nav) with Glowing Beam Line -->
     <section class="video-fullwidth-section">
-        <div class="glowing-beam-line"></div>
-        <div class="video-container">
-            <video id="heroVideo" autoplay loop playsinline muted>
-                <source src="files/Cover1.mp4" type="video/mp4">
-                <source src="files/Cover.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <!-- Quick Sound Toggle Button -->
-            <button id="soundToggleBtn" class="sound-overlay-btn" type="button" title="Toggle Audio">
-                <svg id="soundIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
-                </svg>
-                <span id="soundText">Click to Unmute</span>
-            </button>
-        </div>
-        <div class="glowing-beam-line"></div>
+      <div class="glowing-beam-line"></div>
+      <div class="video-container">
+        <video id="heroVideo" autoplay loop playsinline muted>
+          <source src="files/Cover1.mp4" type="video/mp4" />
+          <source src="files/Cover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Quick Sound Toggle Button -->
+        <button
+          id="soundToggleBtn"
+          class="sound-overlay-btn"
+          type="button"
+          title="Toggle Audio"
+        >
+          <svg
+            id="soundIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
+            />
+          </svg>
+          <span id="soundText">Click to Unmute</span>
+        </button>
+      </div>
+      <div class="glowing-beam-line"></div>
     </section>
 
     <!-- 2. Content Section (Texts & Info Cards after Video) -->
     <main class="content-container">
-        
-        <!-- Header / Coming Soon Texts with Left-to-Right Shimmer -->
-        <div class="header-section">
-            <div class="coming-soon-badge">
-                <span class="pulse-dot"></span>
-                <span>Coming Soon</span>
-            </div>
-            <h1 class="hero-title">Aesthetic Venture</h1>
-            <div class="hero-tagline">Commit to Serve</div>
-            <p class="hero-subtitle">Something visionary is taking shape. We are crafting exceptional spaces and timeless architectural experiences.</p>
+      <!-- Header / Coming Soon Texts with Left-to-Right Shimmer -->
+      <div class="header-section">
+        <div class="coming-soon-badge">
+          <span class="pulse-dot"></span>
+          <span>Coming Soon</span>
         </div>
+        <h1 class="hero-title">Aesthetic Venture</h1>
+        <div class="hero-tagline">Commit to Serve</div>
+        <p class="hero-subtitle">
+          Something visionary is taking shape. We are crafting exceptional
+          spaces and timeless architectural experiences.
+        </p>
+      </div>
 
-        <!-- Glassmorphism Info Card Container with Left-to-Right Glowing Edge -->
-        <section class="info-card-container">
-            <div class="glass-card">
-                <!-- Location Info -->
-                <div class="info-item">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <span class="info-label">Our Location</span>
-                        <p class="info-value">Plot-33, Kallayanpur Main Road.<br>Mirpur, Dhaka -1207.</p>
-                    </div>
-                </div>
-
-                <!-- Email Info -->
-                <div class="info-item">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <span class="info-label">Direct Inquiries</span>
-                        <p class="info-value">
-                            <a href="mailto:Info@aestheticventurebd.com">Info@aestheticventurebd.com</a>
-                        </p>
-                    </div>
-                </div>
+      <!-- Glassmorphism Info Card Container with Left-to-Right Glowing Edge -->
+      <section class="info-card-container">
+        <div class="glass-card">
+          <!-- Location Info -->
+          <div class="info-item">
+            <div class="icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
             </div>
-        </section>
+            <div class="info-content">
+              <span class="info-label">Our Location</span>
+              <p class="info-value">
+                Plot-33, Kallayanpur Main Road.<br />Mirpur, Dhaka -1207.
+              </p>
+            </div>
+          </div>
 
+          <!-- Email Info -->
+          <div class="info-item">
+            <div class="icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="info-content">
+              <span class="info-label">Direct Inquiries</span>
+              <p class="info-value">
+                <a href="mailto:Info@aestheticventurebd.com"
+                  >Info@aestheticventurebd.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Aesthetic Venture. All rights reserved.</p>
+      <p>&copy; 2026 Aesthetic Venture. All rights reserved.</p>
     </footer>
 
     <!-- Video Autoplay & Audio Controller -->
     <script>
-        const video = document.getElementById('heroVideo');
-        const soundBtn = document.getElementById('soundToggleBtn');
-        const soundIcon = document.getElementById('soundIcon');
-        const soundText = document.getElementById('soundText');
+      const video = document.getElementById("heroVideo");
+      const soundBtn = document.getElementById("soundToggleBtn");
+      const soundIcon = document.getElementById("soundIcon");
+      const soundText = document.getElementById("soundText");
 
-        // SVG icons for sound states
-        const soundOnSvg = `
+      // SVG icons for sound states
+      const soundOnSvg = `
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
         `;
-        const soundOffSvg = `
+      const soundOffSvg = `
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
         `;
 
-        function updateSoundUI() {
-            if (video.muted || video.volume === 0) {
-                soundIcon.innerHTML = soundOffSvg;
-                soundText.textContent = 'Click to Unmute';
-                soundBtn.style.background = 'rgba(14, 24, 28, 0.78)';
-                soundBtn.style.borderColor = 'rgba(42, 123, 140, 0.5)';
-            } else {
-                soundIcon.innerHTML = soundOnSvg;
-                soundText.textContent = 'Sound On';
-                soundBtn.style.background = 'rgba(42, 123, 140, 0.88)';
-                soundBtn.style.borderColor = '#5ed2ea';
-            }
+      function updateSoundUI() {
+        if (video.muted || video.volume === 0) {
+          soundIcon.innerHTML = soundOffSvg;
+          soundText.textContent = "Click to Unmute";
+          soundBtn.style.background = "rgba(14, 24, 28, 0.78)";
+          soundBtn.style.borderColor = "rgba(42, 123, 140, 0.5)";
+        } else {
+          soundIcon.innerHTML = soundOnSvg;
+          soundText.textContent = "Sound On";
+          soundBtn.style.background = "rgba(42, 123, 140, 0.88)";
+          soundBtn.style.borderColor = "#5ed2ea";
         }
+      }
 
-        // Handle sound toggle
-        soundBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            video.muted = !video.muted;
-            if (!video.muted) {
-                video.volume = 1.0;
-                video.play();
-            }
-            updateSoundUI();
-        });
-
-        // Ensure video plays automatically on load
-        function startPlayback() {
-            const playPromise = video.play();
-            if (playPromise !== undefined) {
-                playPromise.catch(() => {
-                    video.muted = true;
-                    video.play();
-                });
-            }
+      // Handle sound toggle
+      soundBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        video.muted = !video.muted;
+        if (!video.muted) {
+          video.volume = 1.0;
+          video.play();
         }
+        updateSoundUI();
+      });
 
-        window.addEventListener('DOMContentLoaded', startPlayback);
-        window.addEventListener('load', startPlayback);
-        video.addEventListener('volumechange', updateSoundUI);
+      // Ensure video plays automatically on load
+      function startPlayback() {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            video.muted = true;
+            video.play();
+          });
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", startPlayback);
+      window.addEventListener("load", startPlayback);
+      video.addEventListener("volumechange", updateSoundUI);
     </script>
-
-</body>
+  </body>
 </html>

@@ -41,23 +41,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'Aesthetic Venture',
-    title: 'Aesthetic Venture — Commit to Serve',
+    title: 'Aesthetic Venture',
     description:
-      'Commit to Serve. Crafting exceptional spaces and timeless architectural experiences.',
+      'Commit to Serve',
     images: [
       {
         url: '/files/logo.jpeg',
         width: 800,
         height: 600,
-        alt: 'Aesthetic Venture — Commit to Serve',
+        alt: 'Aesthetic Venture',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aesthetic Venture — Commit to Serve',
+    title: 'Aesthetic Venture',
     description:
-      'Commit to Serve. Crafting exceptional spaces and timeless architectural experiences.',
+      'Commit to Serve',
     images: ['/files/logo.jpeg'],
   },
 };
