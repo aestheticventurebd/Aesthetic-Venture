@@ -24,8 +24,6 @@ export const metadata: Metadata = {
   keywords: [
     'Aesthetic Venture',
     'Commit to Serve',
-    'Architecture',
-    'Interior Design',
     'Dhaka',
     'Bangladesh',
   ],
