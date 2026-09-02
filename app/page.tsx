@@ -164,7 +164,7 @@ export default function HomePage() {
           <div className="hero-tagline">Commit to Serve</div>
           <p className="hero-subtitle">
             Something visionary is taking shape. We are crafting exceptional spaces and
-            timeless architectural experiences.
+            timeless skin care experiences.
           </p>
         </div>
 
